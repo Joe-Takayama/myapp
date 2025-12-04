@@ -1,0 +1,25 @@
+{% extends "base/base.html" %}
+{% block title %}ログイン{% endblock %}
+{% load static %}
+
+{% block contents %}
+
+<div class="login-container">
+    <div class="login-form">
+        <h2>ログイン</h2>
+        <form method="post" action="{% url 'myprofile:login' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">ログイン</button>
+        </form>
+        {% if messages %}
+            <ul style="color: red;">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

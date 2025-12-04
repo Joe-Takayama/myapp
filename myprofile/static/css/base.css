@@ -1,0 +1,232 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: darkolivegreen;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+nav li:hover {
+    background-color: red;
+}
+
+.home-btn {
+    color: white;
+    
+}
+
+.home-btn a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.home-btn1 {
+    color: white;
+}
+
+.home-btn1 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.signup-btn1 {
+    color: white;
+}
+
+.signup-btn1 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.login-btn1 {
+    color: white;
+}
+
+.login-btn1 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.home-btn3 {
+    color: black;
+}
+
+.home-btn3 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.signup-btn3 {
+    color: black;
+}
+
+.signup-btn3 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.login-btn3 {
+    color: black;
+}
+
+.login-btn3 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.resident-evil-all {
+    color: white;
+}
+
+.resident-evil-all a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.resident-evil-story {
+    color: white;
+}
+
+.resident-evil-story a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.my-game {
+    color: white;
+}
+
+.my-game a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.home-btn2 {
+    color: black;
+    
+}
+
+.home-btn2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.resident-evil-all2 {
+    color: black
+}
+
+.resident-evil-all2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.resident-evil-story2 {
+    color: black
+}
+
+.resident-evil-story2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+.my-game2 {
+    color: black
+}
+
+.my-game2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: aqua;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.logout {
+    color: white;
+}
+
+.logout a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;   
+}
+
+.logout-btn1 {
+    color: black;
+}
+
+.logout-btn1 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+}

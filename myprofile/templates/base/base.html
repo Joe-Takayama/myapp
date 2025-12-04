@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet", href="{% static 'css/base.css' %}">
+        <link rel="stylesheet", href="{% static 'css/index.css' %}">
+        <link rel="stylesheet", href="{% static 'css/history.css' %}">
+        <link rel="stylesheet", href="{% static 'css/game-play.css' %}">
+        <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/logout.css' %}">
+        <title>{% block title %}バイオハザードトップページ{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="home-btn"><a href="{% url 'myprofile:index' %}">ホーム</a></li>
+                    {% if request.session.user_id %}
+                        <li class="resident-evil-all"><a href="#all">バイオハザードの作品</a></li>
+                        <li class="resident-evil-story"><a href="{% url 'myprofile:history' %}">バイオハザードのストーリー</a></li>
+                        <li class="my-game"><a href="{% url 'myprofile:game-play' %}">自分のやったことある作品</a></li>
+                        <li class="logout"><a href="{% url 'myprofile:logout' %}">ログアウト</a></li>
+                    {% else %}
+                        <li class="signup-btn1"><a href="{% url 'myprofile:signup' %}">新規登録</a></li>
+                        <li class="login-btn1"><a href="{% url 'myprofile:login' %}">ログイン</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+        {% block contents %}{% endblock %}
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li class="home-btn2"><a href="{% url 'myprofile:index' %}">ホーム</a></li>
+                    {% if request.session.user_id %} 
+                        <li class="resident-evil-all2"><a href="#all">バイオハザードの作品</a></li>
+                        <li class="resident-evil-story2"><a href="{% url 'myprofile:history' %}">バイオハザードのストーリー</a></li>
+                        <li class="my-game2"><a href="{% url 'myprofile:game-play' %}">自分のやったことある作品</a></li>
+                        <li class="logout"><a href="{% url 'myprofile:logout' %}">ログアウト</a></li>
+                    {% else %}
+                        <li class="signup-btn3"><a href="{% url 'myprofile:signup' %}">新規登録</a></li>
+                        <li class="login-btn3"><a href="{% url 'myprofile:login' %}">ログイン</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+{% extends "base/base.html" %}
+{% block title %}お気に入り作品{% endblock %}
+{% load static %}
+
+{% block contents %}
+
+<div class="coment-field">
+    <div class="coment">
+        <p>自分がやったことある作品だけで簡単にランキングをまとめました。<br>
+            <span>あくまで自分がやったことある</span>作品なので、ご紹介した作品がないかもしれませんがご了承ください。<br>
+            下手がCSSでごめんなさい🙇
+        </p>
+    </div>
+</div>
+
+<div class="ranking">
+    <!-- バイオハザードリベレーションズ -->
+    <div class="top1">
+        <div class="top-header">
+            <div class="rank">
+                <div class="rank-number">第1位</div>
+            </div>
+            <div class="coments">
+                <h2>やってみての感想</h2>
+                <p>このゲームを初めてやったのは小学校3年生の頃です。<br>
+                    それまで、バイオハザード2をPS2でやってました。<br>
+                    怖さもあれば、ストーリーの面白さもあり、めちゃめちゃはまりました。<br>
+                    未だに、「THE GHOST SHIP」を周回してます。<br>
+                    初めてやるかたにもおすすめです。
+                </p>
+            </div>
+        </div>
+        <div class="set">
+            <div class="like">
+                <p>バイオハザードリベレーションズ</p>
+                <img src="{% static 'images/resident-evil-revelations.jpg' %}">
+            </div>
+            <div class="star">
+                <p>お気に入り度</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <!-- バイオハザードリベレーションズ -->
+
+    <!-- バイオハザード2 -->
+    <div class="top2">
+        <div class="top-header">
+            <div class="rank">
+                <div class="rank-number">第2位</div>
+            </div>
+            <div class="coments">
+                <h2>やってみての感想</h2>
+                <p>自分がバイオハザードというシリーズ初のゲーム作品でした。<br>
+                    写真ではRE2ですが、自分は原作のバイオハザード2をやりました。<br>
+                    初見の時のあの怖さ、そして敵を倒す爽快感、脳汁が溢れました。<br>
+                    ストーリーも神、EXステージも神、原作だからこその楽しさが良かったです。
+                </p>
+            </div>
+        </div>
+        <div class="set">
+            <div class="like2">
+                <p>バイオハザード2</p>
+                <img src="{% static 'images/resident-evil2.avif' %}">
+                </div>
+                <div class="star">
+                    <p>お気に入り度</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    <br><br>
+    <hr>
+    <!-- バイオハザード2 -->
+
+    <!-- バイオハザード4 -->
+    <div class="top3">
+        <div class="top-header">
+            <div class="rank">
+                <div class="rank-number">第3位</div>
+            </div>
+            <div class="coments">
+                <h2>やってみての感想</h2>
+                <p>圧倒的に神作でした。このゲームはアクション性が高いゲームで、<br>
+                    敵を銃で倒すだけでなく、体術が初めて投入された作品です。<br>
+                    ゲームのシステムを大きく変えたこのゲームは大反響を生み、<br>
+                    シリーズ傑作の神ゲーとなりました。自分もマーセナリーズで<br>
+                    敵を倒す爽快感を感じました。ちなみに一番使ったのは、<span>アルバート・ウェスカー</span>です。<br>
+                    ストーリーも神なので、ぜひやってみてください。
+                </p>
+            </div>
+        </div>
+        <div class="set">
+            <div class="like3">
+                <p>バイオハザード4</p>
+                <img src="{% static 'images/resident-evil4.jpg' %}">
+                </div>
+                <div class="star">
+                    <p>お気に入り度</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- バイオハザード4 -->
+</div>
+
+{% endblock %}

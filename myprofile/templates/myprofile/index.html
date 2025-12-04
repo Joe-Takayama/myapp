@@ -1,0 +1,171 @@
+{% extends "base/base.html" %}
+{% block title %}好きな作品一覧{% endblock %}
+{% load static %}
+
+{% block contents %}
+
+<div class="coment-field">
+    <div class="coment">
+        <p>これらは私が非常に興味を持ったバイオハザードの作品です。
+            <br>
+            私のバイオハザードの出会いは親がやっていたところをじっと見ていて、いつの間にか自分もめちゃめちゃバイオハザードのオタクになっていました。<br>
+            特に恐らくさ最初にやったであろう<span>バイオハザード2</span>は屈指の名作だと思っています。<br>
+            自分なりに大好きなバイオハザードをまとめましたのでご了承ください。
+        </p>
+    </div>
+</div>
+<div class="image-grid" id="all">
+
+    <div class="item" 
+        data-title="バイオハザード0" 
+        data-date="1998年7月23日" 
+        data-release="2002年11月" 
+        data-characters="レベッカ、ビリー、ウェスカー、S.T.A.R.S.ブラヴォーチーム"
+        data-story="第1作「バイオハザード」で描かれる洋館事件の前夜。ラクーン市郊外のアークレイ山の調査に向かったS.T.A.R.S.ブラヴォーチームの新人隊員レベッカ・チェンバースは死刑囚ビリー・コーエンと遭遇、生き残るため協力して黄道特急を調査することに。アンブレラ幹部要請所へたどり着いた二人は始まりとなる事件の元凶を見る…。"
+    >
+        <img src="{% static 'images/resident-evil0.png' %}" alt="">
+        <p>バイオハザード0</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザード1"
+        data-date="1998年7月24日"
+        data-release="1996年3月（オリジナル版）"
+        data-characters="クリス、ジル、バリー、レベッカ、ウェスカー、S.T.A.R.S.アルファチーム"
+        data-story="アークレイ山で消息を絶ったS.T.A.R.S.ブラヴォーチームの調査に向かったクリス・レッドフィールド、ジル・バレンタインらS.T.A.R.S.アルファチーム。クリーチャーの襲撃を受けて彼らが逃げ込んだ洋館は巨大製薬企業アンブレラ社の秘密研究所だった…。すべての始まりとして名高い“洋館事件”を描いたシリーズ第1作。"
+    >
+        <img src="{% static 'images/resident-evil1.jpg' %}" alt="">
+        <p>バイオハザード1</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザードRE2"
+        data-date="1998年9月29日"
+        data-release="2019年1月"
+        data-characters="レオン、クレア、エイダ、シェリー"
+        data-story="洋館事件から約2ヶ月後。ラクーン市警の新人警官レオン・S・ケネディと、兄の消息を求める大学生クレア・レッドフィールドはラクーンシティを訪れる。しかしラクーンシティはt-ウィルスの感染拡大によって生ける屍者の街と化していた。生還を目指す二人のサバイバルが始まる。『バイオハザード RE:3』と近しい時系列に同じラクーンシティで起こった事件を描いている。"
+    >
+        <img src="{% static 'images/resident-evil2.avif' %}" alt="">
+        <p>バイオハザードRE2</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザードRE3"
+        data-date="1998年9月29日"
+        data-release="2020年4月"
+        data-characters="ジル、カルロス、U.B.C.S.、S.T.A.R.S.アルファチーム"
+        data-story="洋館事件から約2ヶ月後、アンブレラ社を告発する捜査のためラクーン市内に残っていたジル・バレンタイン。しかしt-ウィルスの流出はラクーンシティ市街でのパンデミックへと拡大しつつあった。アンブレラ社は混乱に乗じて事件の真相を知るS.T.A.R.S.メンバーを抹殺すべく、試作B.O.W.（有機生命体兵器）“ネメシス”を投入する。『バイオハザード RE:2』の前日から事件の終焉までが描かれる。"
+    >
+        <img src="{% static 'images/resident-evil3.png' %}" alt="">
+        <p>バイオハザードRE3</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザードRE4"
+        data-date="2004年秋頃"
+        data-release="2023年3月24日"
+        data-characters="レオン、アシュリー、ハニガン、エイダ、ウェスカー、クラウザー"
+        data-story="アンブレラ社の崩壊後、ラクーンシティから生還したレオンは合衆国大統領直属のエージェントへと抜擢されていた。レオンは誘拐された大統領の令嬢、アシュリーの救出のため、ヨーロッパの寒村へと赴く。そこではウイルスとは異なる、邪悪なバイオテロが進行しつつあった。"
+    >
+        <img src="{% static 'images/resident-evil4.jpg' %}" alt="">
+        <p>バイオハザードRE4</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザードリベレーションズ"
+        data-date="2005年"
+        date-release="2012年1月"
+        data-characters="ジル、クリス"
+        data-story="アンブレラ社崩壊から1年後－。地中海の最先端海上都市「テラグリジア」で大規模なバイオテロ「テラグリジア・パニック」が発生する。収束したかに見えたバイオテロは豪華客船「クイーン・ゼノビア号」での事件へと繋がってゆく。対バイオテロ部隊BSAAの設立と黎明期が描かれる。"
+    >
+        <img src="{% static 'images/resident-evil-revelations.jpg' %}" alt="">
+        <p>バイオハザードリベレーションズ</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザード5"
+        data-date="2009年3月"
+        data-release="2009年3月"
+        data-characters="クリス、シェバ、ジル、ウェスカー"
+        data-story="アンブレラ社の崩壊後、バイオテロは世界中へ拡散していた。アフリカのキジュジュ自治区での生物兵器闇取引の情報を掴んだクリスはアフリカへと赴く。それは全世界を巻き込む大規模なバイオテロ“ウロボロス計画”の糸口に過ぎなかった。クリスとウェスカーの決着が描かれる。"
+    >
+        <img src="{% static 'images/resident-evil5.png' %}" alt="">
+        <p>バイオハザード5</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザードリベレーションズ2"
+        data-date="2011年"
+        data-release="2015年3月"
+        data-characters="クレア、モイラ、バリー、ナタリア"
+        data-story="バイオテロや薬害被害者救済を行うNGO団体“テラセイブ”に所属するクレアとモイラは何者かに拉致され孤島の実験施設へと幽閉される。彼らを救うべく急行したバリーは島で出遭った少女ナタリアと行動を共にする。島ではもう一人のウェスカー＝アレックスの邪悪な実験が進行していた…。"
+    >
+        <img src="{% static 'images/resident-evil-revelations2.jpg' %}" alt="">
+        <p>バイオハザードリベレーションズ2</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザード6"
+        data-date="2013年6月"
+        data-release="2012年10月"
+        data-characters="レオン、ヘレナ、クリス、ピアーズ、ジェイク、シェリー、エイダ"
+        data-story="東欧、北米、そして中国―。世界規模で同時多発的に発生するバイオテロ事件は、複雑に絡みあってゆく。合衆国エージェントのレオン、対バイオテロ部隊BSAA隊長のクリス、ウェスカーの息子であり、傭兵のジェイク、謎の女性エイダ、4つの視点で真実を描き出す。"
+    >
+        <img src="{% static 'images/resident-evil6.png' %}" alt="">
+        <p>バイオハザード6</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザード7"
+        data-date="2017年"
+        data-release="2017年1月"
+        data-characters="イーサン、ミア、ゾイ、クリス"
+        data-story="妻の消息を求めてルイジアナへ向かうイーサン・ウィンターズ。彼女から連絡のあった目的地は狂気に満ちたベイカー家の住まう邸だった。特殊部隊員でもエージェントでもない一般人が巻き込まれた“混沌”からのサバイバルが始まる。"
+    >
+        <img src="{% static 'images/resident-evil7.avif' %}" alt="">
+        <p>バイオハザード7</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザード8"
+        data-date="2021年2月"
+        data-release="2021年5月"
+        data-characters="イーサン、クリス、ミア、ローズ"
+        data-story="ベイカー邸事件の３年後。家族との平穏な日々を過ごしていたイーサンは、突然クリス率いる部隊の襲撃を受ける。愛娘のローズを取り戻すため、イーサンは“マザー・ミランダ”と彼女に仕える四貴族が支配する“村”での決死行へと挑む。"
+    >
+        <img src="{% static 'images/resident-evil8.jpg' %}" alt="">
+        <p>バイオハザード8</p>
+    </div>
+
+    <div class="item"
+        data-title="バイオハザード9"
+        data-date="???"
+        data-release="2026年2月"
+        data-characters="グレース、アリッサ"
+        data-story="廃ホテルで起こった変死事件、それが全ての始まりだったー。捜査を任されたのはグレース・アッシュクロフト。8年前に同じホテルで母親を失ったFBI分析官だ。彼女は過去を乗り越えるべく現場へと向かう。一つの事件は、やがて世界を震撼させた生物災害“ラクーン事件”に隠された真実へと繋がってゆく。忌まわしき記憶、そして忌むべき災厄の”鎮魂”は果たして叶うのだろうか。"
+    >
+        <img src="{% static 'images/resident-evil9.jpg' %}" alt="">
+        <p>バイオハザード9</p>
+    </div>
+
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close-btn">&times;</span>
+
+        <img id="modal-image" src="" alt="" class="modal-image">
+
+        <h2 id="modal-title"></h2>
+
+        <p id="modal-date"></p>
+        <p id="modal-release"></p>
+        <p id="modal-characters"></p>
+
+        <h3>概要</h3>
+        <p id="modal-story"></p>
+
+    </div>
+</div>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

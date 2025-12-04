@@ -1,0 +1,19 @@
+{% extends "base/base.html" %}
+{% block title %}新規登録{% endblock %}
+{% load static %}
+
+{% block contents %}
+
+<div class="signup-container">
+    <div class="signup-form">
+        <h2>新規登録</h2>
+
+        <form method="post" action="{% url 'myprofile:signup' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">新規登録</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
